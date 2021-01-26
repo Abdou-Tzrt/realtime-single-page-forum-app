@@ -29139,9 +29139,11 @@ window.Pusher = __webpack_require__(48);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a" /* default */]({
     broadcaster: 'pusher',
-    key: "ca008e109e60d78e3af5",
-    cluster: "eu",
-    encrypted: true,
+    key: "myKey",
+    wsHost: window.location.hostname,
+    wsPort: 6001,
+    forceTLS: false,
+    disableStats: true,
     auth: {
         headers: {
             Authorization: JwToken
