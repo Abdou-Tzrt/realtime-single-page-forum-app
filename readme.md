@@ -1,4 +1,6 @@
-**** Installation /**
+**** Installation **
+
+
 Clone this repository
 
 git clone git@github.com:Abdou-Tzrt/realtime-single-page-forum-app.git
@@ -7,7 +9,10 @@ Go inside the directory
 
 cd real-time-single-page-forum-app
 
+
+
 ***Now install composer
+
 
 composer install
 Generate key on .env file
@@ -16,6 +21,8 @@ cp .env.example .env
 php artisan key:generate
 
 **** Setting for Pusher ***
+
+
 Go to .env file and change Broadcast drive to pusher
 
 BROADCAST_DRIVER=pusher
@@ -33,5 +40,9 @@ window.Echo = new Echo({
     cluster: "xxx",
     encrypted: true,
     ...
+
+
+
+
 
 php artisan migrate
