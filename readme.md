@@ -46,15 +46,10 @@ PUSHER_APP_CLUSTER=xxx
 open bootstrap.js file and provide pusher key there also.
 
 window.Echo = new Echo({
-
-    broadcaster: 'pusher',
-    
-    key: "xxxxxxxxxxxxxxxxxxxxx",
-    
-    cluster: "xxx",
-    
-    encrypted: true,
-    
+    broadcaster: 'pusher',    
+    key: "xxxxxxxxxxxxxxxxxxxxx",    
+    cluster: "xxx",    
+    encrypted: true,    
     ...
 
 
